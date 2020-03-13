@@ -10,6 +10,7 @@
     <url>
     <%-
         url = "#{Discourse.base_url}/t/#{topic[1]}/#{topic[0]}"
+        ampurl = "https://go.thuvienmuasam.com/amp/t/#{topic[1]}/#{topic[0]}"
         if topic[4]
           page = ((topic[4]+1) / TopicView.chunk_size) + 1
           if page > 1
@@ -18,6 +19,7 @@
         end
     -%>
         <loc><%= url %></loc>
+        <xhtml:link rel="amphtml" href="<%= ampurl %>" />
         <lastmod><%= topic[2].xmlschema %></lastmod>
     </url>
     <% end %>
