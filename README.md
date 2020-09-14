@@ -1,3 +1,5 @@
+# After a while, this option is no longer active and should not be used.
+
 # Sitemap Plugin
 
 * Authors: richard@discoursehosting.com (@RGJ) and michael@discoursehosting.com (@michaeld)
